@@ -1,0 +1,65 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__logo {
+    flex-basis: 15%;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-basis: 70%;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 110px;
+    text-align: center;
+  }
+
+  &__link {
+    color: $header-color-text-black;
+    font-size: 14px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-purple;
+    }
+  }
+
+  &__registration {
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__button {
+    width: 93px;
+    height: 31px;
+    border: none;
+    border-radius: 5px;
+    background-color: $color-purple;
+    color: $text-color-white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: border, background-color, 0.3s;
+
+    &:hover {
+      border: 1px solid $color-purple;
+      background-color: transparent;
+      color: $text-color-black;
+    }
+  }
+}

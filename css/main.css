@@ -1,0 +1,244 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v47-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v47-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v22-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: rgba(21, 21, 21, 0.6);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  cursor: default;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 38px 60px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__logo {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 100px;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__item {
+  max-width: 110px;
+  text-align: center;
+}
+.header__link {
+  color: #181818;
+  font-size: 14px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.header__link:hover {
+  color: rgb(101, 98, 147);
+}
+.header__registration {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.header__button {
+  width: 93px;
+  height: 31px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(101, 98, 147);
+  color: #ffffff;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-transition: border, background-color, 0.3s;
+  transition: border, background-color, 0.3s;
+}
+.header__button:hover {
+  border: 1px solid rgb(101, 98, 147);
+  background-color: transparent;
+  color: #151515;
+}
+
+.hero-section {
+  padding-top: 90px;
+  background-image: url("/img/hero-section-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 170px;
+}
+.hero-section__title {
+  margin-bottom: 48px;
+  font-family: "Roboto";
+  font-size: 66px;
+  line-height: 1.2;
+  color: #151515;
+  max-width: 578px;
+}
+.hero-section__title--color-text {
+  color: rgb(101, 98, 147);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero-section__image {
+  border: 15px solid rgb(255, 255, 255);
+  border-radius: 120px 120px 120px 120px;
+  -webkit-box-shadow: 0px 0px 12px 2px gray;
+          box-shadow: 0px 0px 12px 2px gray;
+}
+.hero-section__link {
+  color: #151515;
+}
+.hero-section__link-container {
+  position: relative;
+}
+.hero-section__link::after {
+  content: url("/img/arrow-right.svg");
+  position: absolute;
+  margin-left: 9px;
+  top: 3px;
+}
+.hero-section__link-container {
+  position: relative;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  color: black;
+}/*# sourceMappingURL=main.css.map */

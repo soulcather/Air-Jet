@@ -1,0 +1,58 @@
+.hero-section {
+  padding-top: 90px;
+  background-image: url('/img/hero-section-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 170px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    font-family: 'Roboto';
+    font-size: 66px;
+    line-height: 1.2;
+    color: $text-color-black;
+    max-width: 578px;
+
+    &--color-text {
+      color: $color-purple;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__image {
+    border: 15px solid rgba(255, 255, 255, 1);
+    border-radius: 120px 120px 120px 120px;
+    box-shadow: 0px 0px 12px 2px gray;
+  }
+
+  &__link {
+    color: $text-color-black;
+    &-container {
+      position: relative;
+    }
+
+    &::after {
+      content: url('/img/arrow-right.svg');
+      position: absolute;
+      margin-left: 9px;
+      top: 3px;
+    }
+
+    &-container {
+      position: relative;
+    }
+  }
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  color: black;
+}
