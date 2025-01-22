@@ -9,17 +9,19 @@
     align-items: center;
     justify-content: space-between;
     gap: 170px;
+    margin-bottom: 35px;
   }
 
-  &__title {
+  &__title-text {
     margin-bottom: 48px;
     font-family: 'Roboto';
     font-size: 66px;
     line-height: 1.2;
     color: $text-color-black;
     max-width: 578px;
+    font-weight: 400;
 
-    &--color-text {
+    &--color {
       color: $color-purple;
       font-weight: 700;
       text-transform: uppercase;
@@ -51,8 +53,13 @@
   }
 }
 
-.img {
-  width: 100px;
-  height: 100px;
-  color: black;
+.form {
+  &__backdrop {
+    height: 250px;
+    width: 100%;
+    max-width: 1280px;
+    background-color: #000;
+    border-radius: 12px;
+    margin-top: -70px;
+  }
 }

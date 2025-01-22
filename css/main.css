@@ -201,16 +201,18 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 170px;
+  margin-bottom: 35px;
 }
-.hero-section__title {
+.hero-section__title-text {
   margin-bottom: 48px;
   font-family: "Roboto";
   font-size: 66px;
   line-height: 1.2;
   color: #151515;
   max-width: 578px;
+  font-weight: 400;
 }
-.hero-section__title--color-text {
+.hero-section__title-text--color {
   color: rgb(101, 98, 147);
   font-weight: 700;
   text-transform: uppercase;
@@ -237,8 +239,80 @@ ul {
   position: relative;
 }
 
-.img {
-  width: 100px;
-  height: 100px;
-  color: black;
+.form__backdrop {
+  height: 250px;
+  width: 100%;
+  max-width: 1280px;
+  background-color: #000;
+  border-radius: 12px;
+  margin-top: -70px;
+}
+
+.section-private {
+  padding: 135px 0;
+}
+.section-private__title {
+  margin: 0 auto;
+  color: #151515;
+  margin-bottom: 130px;
+}
+.section-private__title-text {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.section-private__jet {
+  margin-bottom: 180px;
+  position: relative;
+}
+.section-private__jet:last-child {
+  margin-bottom: 0;
+}
+.section-private__jet-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-private__jet-backdrop-first {
+  width: 1500px;
+  height: 525px;
+  background-color: rgb(229, 244, 246);
+  border-radius: 50px;
+  position: absolute;
+  top: -20%;
+  left: -110%;
+  z-index: -1;
+}
+.section-private__jet-backdrop-second {
+  width: 1500px;
+  height: 525px;
+  background-color: rgb(229, 244, 246);
+  border-radius: 50px;
+  position: absolute;
+  bottom: -15%;
+  right: -110%;
+  z-index: -1;
+}
+.section-private__jet-description-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #151515;
+  margin-bottom: 14px;
+}
+.section-private__jet-description-text {
+  color: rgba(21, 21, 21, 0.6);
+  letter-spacing: 2px;
+}
+.section-private__jet-img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.section-private__jet-img-item {
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */
