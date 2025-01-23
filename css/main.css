@@ -365,4 +365,149 @@ ul {
 }
 .section-performance__card-text {
   text-align: center;
+}
+
+.section-luxury__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+.section-luxury__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.section-luxury__container::after {
+  content: "";
+  width: 854px;
+  height: 340px;
+  background: url(/img/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  position: absolute;
+  top: -10%;
+  right: -15%;
+  z-index: -1;
+}
+.section-luxury__card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 6px 9px 1px grey;
+          box-shadow: 0px 6px 9px 1px grey;
+  padding: 10px 12px 52px;
+}
+.section-luxury__card-img {
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+.section-luxury__card-text {
+  text-align: center;
+  color: #151515;
+  margin-bottom: 0;
+}
+
+.section-cards__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 65px;
+}
+.section-cards__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-cards__item {
+  border-radius: 20px;
+  background-color: rgb(245, 245, 245);
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  height: 572px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.section-cards__item:hover {
+  background-color: rgb(101, 98, 147);
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+.section-cards__item:hover button {
+  color: #151515;
+  background-color: rgb(245, 245, 245);
+}
+.section-cards__item:hover p,
+.section-cards__item h3,
+.section-cards__item li {
+  color: rgb(245, 245, 245);
+}
+
+.text-block {
+  border-bottom: 1px dashed rgb(169, 169, 170);
+}
+.text-block__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #151515;
+  margin-bottom: 32px;
+}
+.text-block__text {
+  color: rgb(169, 169, 170);
+  font-size: 22px;
+}
+.text-block__list-item {
+  position: relative;
+  color: #151515;
+  margin: 0 0 16px 30px;
+}
+.text-block__list-item:last-child {
+  margin-bottom: 18px;
+}
+.text-block__list-item::before {
+  content: "";
+  background-image: url(/img/check-alt.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: -31px;
+}
+
+.choise-block {
+  padding-top: 65px;
+}
+.choise-block__price {
+  font-size: 18px;
+  color: #151515;
+  margin-bottom: 24px;
+}
+.choise-block__price-text-bold {
+  font-size: 32px;
+  font-weight: 700;
+}
+.choise-block__price-btn {
+  border: none;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgb(101, 98, 147);
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
