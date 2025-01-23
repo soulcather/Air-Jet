@@ -25,7 +25,7 @@
 
     &:hover {
       background-color: $color-purple;
-      transform: translateY(15px);
+      transform: translateY(-15px);
     }
 
     &:hover button {
@@ -33,9 +33,15 @@
       background-color: $card-color-white;
     }
 
-    &:hover p,
-    h3,
-    li {
+    &:hover p {
+      color: $card-color-white;
+    }
+
+    &:hover h3 {
+      color: $card-color-white;
+    }
+
+    &:hover li {
       color: $card-color-white;
     }
   }

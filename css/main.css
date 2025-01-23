@@ -443,16 +443,20 @@ ul {
 }
 .section-cards__item:hover {
   background-color: rgb(101, 98, 147);
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 .section-cards__item:hover button {
   color: #151515;
   background-color: rgb(245, 245, 245);
 }
-.section-cards__item:hover p,
-.section-cards__item h3,
-.section-cards__item li {
+.section-cards__item:hover p {
+  color: rgb(245, 245, 245);
+}
+.section-cards__item:hover h3 {
+  color: rgb(245, 245, 245);
+}
+.section-cards__item:hover li {
   color: rgb(245, 245, 245);
 }
 
