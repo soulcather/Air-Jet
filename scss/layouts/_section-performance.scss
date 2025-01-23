@@ -1,0 +1,44 @@
+.section-performance {
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__container {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__cards-container {
+    flex-basis: 33.3%;
+  }
+
+  &__card {
+    border-radius: 12px;
+    box-shadow: 0px 11px 16px 4px grey;
+    padding: 40px 52px 50px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-icon {
+      margin: 0 auto 12px;
+    }
+
+    &-title {
+      text-align: center;
+      font-size: 18px;
+      color: $text-color-black;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      text-align: center;
+    }
+  }
+}

@@ -38,6 +38,12 @@
   font-weight: 700;
   src: url("../fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.title {
+  margin: 0 auto;
+  color: #151515;
+  margin-bottom: 130px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -278,23 +284,23 @@ ul {
           align-items: center;
 }
 .section-private__jet-backdrop-first {
-  width: 1500px;
+  width: 330px;
   height: 525px;
   background-color: rgb(229, 244, 246);
-  border-radius: 50px;
+  border-radius: 0 50px 50px 0;
   position: absolute;
   top: -20%;
-  left: -110%;
+  left: -15.5%;
   z-index: -1;
 }
 .section-private__jet-backdrop-second {
-  width: 1500px;
+  width: 330px;
   height: 525px;
   background-color: rgb(229, 244, 246);
-  border-radius: 50px;
+  border-radius: 50px 0 0 50px;
   position: absolute;
   bottom: -15%;
-  right: -110%;
+  right: -15.5%;
   z-index: -1;
 }
 .section-private__jet-description-title {
@@ -315,4 +321,48 @@ ul {
 }
 .section-private__jet-img-item {
   border-radius: 20px;
+}
+
+.section-performance__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.section-performance__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-performance__cards-container {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+.section-performance__card {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 11px 16px 4px grey;
+          box-shadow: 0px 11px 16px 4px grey;
+  padding: 40px 52px 50px;
+  margin-bottom: 30px;
+}
+.section-performance__card:last-child {
+  margin-bottom: 0;
+}
+.section-performance__card-icon {
+  margin: 0 auto 12px;
+}
+.section-performance__card-title {
+  text-align: center;
+  font-size: 18px;
+  color: #151515;
+  margin-bottom: 10px;
+}
+.section-performance__card-text {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
