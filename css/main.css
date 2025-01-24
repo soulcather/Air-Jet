@@ -236,7 +236,7 @@ ul {
   position: relative;
 }
 .hero-section__link::after {
-  content: url("/img/arrow-right.svg");
+  content: url("../img/arrow-right.svg");
   position: absolute;
   margin-left: 9px;
   top: 3px;
@@ -249,9 +249,17 @@ ul {
   height: 250px;
   width: 100%;
   max-width: 1280px;
-  background-color: #000;
+  background-color: rgb(245, 245, 245);
   border-radius: 12px;
+  -webkit-box-shadow: 0 5px 13px 7px grey;
+          box-shadow: 0 5px 13px 7px grey;
   margin-top: -70px;
+}
+.form__select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
 }
 
 .section-private {
@@ -413,6 +421,9 @@ ul {
   margin-bottom: 0;
 }
 
+.section-cards {
+  margin-bottom: 220px;
+}
 .section-cards__title {
   text-align: center;
   font-size: 36px;
@@ -483,7 +494,7 @@ ul {
 }
 .text-block__list-item::before {
   content: "";
-  background-image: url(/img/check-alt.svg);
+  background-image: url(../img/check-alt.svg);
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -514,4 +525,54 @@ ul {
   width: 100%;
   padding: 12px;
   cursor: pointer;
+}
+
+.footer {
+  background-color: rgb(101, 98, 147);
+  padding: 50px 150px 15px;
+}
+.footer__logo {
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+.footer__logo-link {
+  display: block;
+  margin: 0 auto 30px;
+  width: 140px;
+}
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.footer__nav-list-link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.footer__nav-list-link:hover {
+  color: #151515;
+}
+.footer__nav-rigths-link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.footer__nav-rigths-link:hover {
+  color: #151515;
 }/*# sourceMappingURL=main.css.map */

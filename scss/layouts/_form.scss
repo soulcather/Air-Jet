@@ -1,0 +1,16 @@
+.form {
+  &__backdrop {
+    height: 250px;
+    width: 100%;
+    max-width: 1280px;
+    background-color: $card-color-white;
+    border-radius: 12px;
+    box-shadow: 0 5px 13px 7px grey;
+    margin-top: -70px;
+  }
+
+  &__select-container {
+    display: flex;
+    gap: 25px;
+  }
+}

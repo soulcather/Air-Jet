@@ -18,22 +18,24 @@
 
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="#">Home</a>
+              <a class="header__link" href="#hero-section">Home</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Booking</a>
+              <a class="header__link" href="#form">Booking</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Private Jet</a>
+              <a class="header__link" href="#section-private">Private Jet</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Specification</a>
+              <a class="header__link" href="#section-performance"
+                >Specification</a
+              >
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Luxury Charters</a>
+              <a class="header__link" href="#section-luxury">Luxury Charters</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Membership</a>
+              <a class="header__link" href="#section-cards">Membership</a>
             </li>
           </ul>
 
@@ -46,7 +48,7 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="hero-section">
         <div class="container">
           <div class="hero-section__container">
             <div class="hero-section__text-container">
@@ -72,14 +74,34 @@
         </div>
       </section>
 
-      <section class="form">
+      <section class="form" id="form">
         <div class="container">
+          <div class="form__select-container">
+            <select name="Round" id="">
+              <option value="0">item 1</option>
+              <option value="1">item 2</option>
+              <option value="2">item 3</option>
+            </select>
+
+            <select name="Fligth type" id="">
+              <option value="0">item 1</option>
+              <option value="1">item 2</option>
+              <option value="2">item 3</option>
+            </select>
+
+            <select name="Person" id="">
+              <option value="0">item 1</option>
+              <option value="1">item 2</option>
+              <option value="2">item 3</option>
+            </select>
+          </div>
+          <form action=""></form>
           <!-- form -->
           <div class="form__backdrop"></div>
         </div>
       </section>
 
-      <section class="section-private">
+      <section class="section-private" id="section-private">
         <div class="container">
           <div class="section-private__title">
             <h2 class="section-private__title-text title">
@@ -138,7 +160,7 @@
           </div>
         </div>
       </section>
-      <section class="section-performance">
+      <section class="section-performance" id="section-performance">
         <div class="container">
           <h2 class="section-performance__title title">
             Private Jet Performance and Specifications
@@ -148,7 +170,7 @@
               <div class="section-performance__card">
                 <img
                   class="section-performance__card-icon"
-                  src="/img/seat.svg"
+                  src="../img/seat.svg"
                   alt="seat"
                 />
 
@@ -164,7 +186,7 @@
               <div class="section-performance__card">
                 <img
                   class="section-performance__card-icon"
-                  src="/img/schedule.svg"
+                  src="../img/schedule.svg"
                   alt="schedule"
                 />
 
@@ -182,7 +204,7 @@
               <div class="section-performance__plane-item">
                 <img
                   class="section-performance__plane-img"
-                  src="/img/plane.png"
+                  src="../img/plane.png"
                   alt="Plane"
                 />
               </div>
@@ -191,7 +213,7 @@
               <div class="section-performance__card">
                 <img
                   class="section-performance__card-icon"
-                  src="/img/web-browser.svg"
+                  src="../img/web-browser.svg"
                   alt="security"
                 />
 
@@ -207,7 +229,7 @@
               <div class="section-performance__card">
                 <img
                   class="section-performance__card-icon"
-                  src="/img/captain.svg"
+                  src="../img/captain.svg"
                   alt="captain"
                 />
 
@@ -224,7 +246,7 @@
           </div>
         </div>
       </section>
-      <section class="section-luxury">
+      <section class="section-luxury" id="section-luxury">
         <div class="container">
           <h2 class="section-luxury__title title">Luxury Charters</h2>
           <div class="section-luxury__container">
@@ -263,7 +285,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cards">
+      <section class="section-cards" id="section-cards">
         <div class="container">
           <h2 class="section-cards__title title">Enjoy our membership</h2>
 
@@ -352,6 +374,37 @@
           </div>
         </div>
       </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#">
+              <img src="../img/footer-logo.svg" alt="Air Jet Logo" />
+            </a>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-list-item">
+                <a class="footer__nav-list-link" href="#">SERVICE</a>
+              </li>
+              <li class="footer__nav-list-item">
+                <a class="footer__nav-list-link" href="#">ABOUT US</a>
+              </li>
+              <li class="footer__nav-list-item">
+                <a class="footer__nav-list-link" href="#">NEWS</a>
+              </li>
+              <li class="footer__nav-list-item">
+                <a class="footer__nav-list-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+            <div class="footer__nav-rigths">
+              <a class="footer__nav-rigths-link" href="#">
+                &copy 2021 Air. All rights reserved.
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

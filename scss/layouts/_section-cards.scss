@@ -1,4 +1,5 @@
 .section-cards {
+  margin-bottom: 220px;
   &__title {
     text-align: center;
     font-size: 36px;
@@ -72,7 +73,7 @@
 
     &::before {
       content: '';
-      background-image: url(/img/check-alt.svg);
+      background-image: url(../img/check-alt.svg);
       display: inline-block;
       width: 24px;
       height: 24px;
