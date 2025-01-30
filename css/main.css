@@ -249,17 +249,69 @@ ul {
   height: 250px;
   width: 100%;
   max-width: 1280px;
-  background-color: rgb(245, 245, 245);
+  background-color: #ffffff;
   border-radius: 12px;
   -webkit-box-shadow: 0 5px 13px 7px grey;
           box-shadow: 0 5px 13px 7px grey;
-  margin-top: -70px;
+  margin: -40px auto;
 }
 .form__select-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
+  margin-bottom: 25px;
+}
+.form__select-container .select {
+  border: none;
+  background-color: transparent;
+  color: #151515;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 35px;
+}
+.form__select-container .select:last-child {
+  margin-right: 0;
+}
+.form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+.form__from {
+  border: 2px solid rgb(170, 170, 170);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+.form__button-replace {
+  margin: auto 0;
+}
+.form__button-replace-item {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+}
+.form__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid rgb(170, 170, 170);
+  border-radius: 12px;
+  padding: 16px 20px;
 }
 
 .section-private {

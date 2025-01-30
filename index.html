@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Air Jet</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -75,29 +85,108 @@
       </section>
 
       <section class="form" id="form">
-        <div class="container">
-          <div class="form__select-container">
-            <select name="Round" id="">
-              <option value="0">item 1</option>
-              <option value="1">item 2</option>
-              <option value="2">item 3</option>
-            </select>
+        <div class="form__backdrop">
+          <div class="container">
+            <div class="form__select-container">
+              <select class="select" name="Round" id="first_select">
+                <option value="0">Round Trip</option>
+                <option value="1">Round Trip</option>
+                <option value="2">Round Trip</option>
+              </select>
 
-            <select name="Fligth type" id="">
-              <option value="0">item 1</option>
-              <option value="1">item 2</option>
-              <option value="2">item 3</option>
-            </select>
+              <select class="select" name="Fligth type" id="second__select">
+                <option value="0">Flight Type</option>
+                <option value="1">Flight Type</option>
+                <option value="2">Flight Type</option>
+              </select>
 
-            <select name="Person" id="">
-              <option value="0">item 1</option>
-              <option value="1">item 2</option>
-              <option value="2">item 3</option>
-            </select>
+              <select class="select" name="Person" id="third__select">
+                <option value="0">Person</option>
+                <option value="1">Person</option>
+                <option value="2">Person</option>
+              </select>
+            </div>
+            <form action="">
+              <div class="form__container">
+                <div class="form__from">
+                  <div class="form__from-title">
+                    <p>From</p>
+                  </div>
+                  <input type="text" placeholder="LAX" />
+                  <div class="form__from-port">
+                    <p>Los Angeles Intl Arpt,Los Angeles</p>
+                  </div>
+                </div>
+                <div class="form__button-replace">
+                  <button class="form__button-replace-item" type="button">
+                    <img src="./img/transfer.svg" alt="" />
+                  </button>
+                </div>
+                <div class="form__from">
+                  <div class="form__from-title">
+                    <p>To</p>
+                  </div>
+                  <input type="text" placeholder="MIA" />
+                  <div class="form__from-port">
+                    <p>Miami Intl,Miami</p>
+                  </div>
+                </div>
+                <div class="form__date">
+                  <div class="form__date-departure">
+                    <div class="departure__title">
+                      <p>Departure</p>
+                    </div>
+                    <div class="flatpickr">
+                      <input
+                        class="date"
+                        type="text"
+                        placeholder="Fri 15 Oct"
+                        data-input
+                      />
+
+                      <a class="input-button" title="toggle" data-toggle>
+                        <img
+                          class="icon-calendar"
+                          src="./img/calendar.svg"
+                          alt=""
+                        />
+                      </a>
+                      <div class="date__button-container">
+                        <button>Prev</button>
+                        <button>Next</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__date-return">
+                    <div class="departure__title">
+                      <p>Return</p>
+                    </div>
+                    <div class="flatpickr">
+                      <input
+                        class="date"
+                        type="text"
+                        placeholder="Tue 19 Oct"
+                        data-input
+                      />
+
+                      <a class="input-button" title="toggle" data-toggle>
+                        <img
+                          class="icon-calendar"
+                          src="./img/calendar.svg"
+                          alt=""
+                        />
+                      </a>
+                      <div class="date__button-container">
+                        <button>Prev</button>
+                        <button>Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- form -->
           </div>
-          <form action=""></form>
-          <!-- form -->
-          <div class="form__backdrop"></div>
         </div>
       </section>
 
@@ -406,5 +495,9 @@
         </div>
       </footer>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
