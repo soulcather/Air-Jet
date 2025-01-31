@@ -85,8 +85,8 @@
       </section>
 
       <section class="form" id="form">
-        <div class="form__backdrop">
-          <div class="container">
+        <div class="container">
+          <div class="form__backdrop">
             <div class="form__select-container">
               <select class="select" name="Round" id="first_select">
                 <option value="0">Round Trip</option>
@@ -110,79 +110,94 @@
               <div class="form__container">
                 <div class="form__from">
                   <div class="form__from-title">
-                    <p>From</p>
+                    <p class="form__from-text">From</p>
                   </div>
-                  <input type="text" placeholder="LAX" />
+                  <input
+                    class="form__from-input"
+                    type="text"
+                    placeholder="LAX"
+                  />
                   <div class="form__from-port">
-                    <p>Los Angeles Intl Arpt,Los Angeles</p>
+                    <p class="form__from-text">
+                      Los Angeles Intl Arpt,Los Angeles
+                    </p>
                   </div>
                 </div>
                 <div class="form__button-replace">
                   <button class="form__button-replace-item" type="button">
-                    <img src="./img/transfer.svg" alt="" />
+                    <img
+                      class="form__button-replace-item-img"
+                      src="./img/transfer.svg"
+                      alt=""
+                    />
                   </button>
                 </div>
                 <div class="form__from">
                   <div class="form__from-title">
-                    <p>To</p>
+                    <p class="form__from-text">To</p>
                   </div>
-                  <input type="text" placeholder="MIA" />
+                  <input
+                    class="form__from-input"
+                    type="text"
+                    placeholder="MIA"
+                  />
                   <div class="form__from-port">
-                    <p>Miami Intl,Miami</p>
+                    <p class="form__from-text">Miami Intl,Miami</p>
                   </div>
                 </div>
                 <div class="form__date">
                   <div class="form__date-departure">
                     <div class="departure__title">
-                      <p>Departure</p>
+                      <p class="form__from-text">Departure</p>
                     </div>
                     <div class="flatpickr">
-                      <input
-                        class="date"
-                        type="text"
-                        placeholder="Fri 15 Oct"
-                        data-input
-                      />
-
-                      <a class="input-button" title="toggle" data-toggle>
+                      <input id="date" type="text" placeholder="Fri 15 Oct" />
+                      <div id="formatted-date" class="formatted-date">
+                        Fri 15 <br />
+                        Oct
+                      </div>
+                      <a id="calendar-icon" class="calendar-icon">
                         <img
-                          class="icon-calendar"
+                          id="calendar-icon"
                           src="./img/calendar.svg"
                           alt=""
                         />
                       </a>
-                      <div class="date__button-container">
-                        <button>Prev</button>
-                        <button>Next</button>
-                      </div>
                     </div>
                   </div>
                   <div class="form__date-return">
                     <div class="departure__title">
-                      <p>Return</p>
+                      <p class="form__from-text">Return</p>
                     </div>
                     <div class="flatpickr">
+                      <label for="date_return"></label>
                       <input
-                        class="date"
+                        id="date_return"
                         type="text"
                         placeholder="Tue 19 Oct"
-                        data-input
                       />
+                      <div
+                        id="formatted-date-return"
+                        class="formatted-date-return"
+                      >
+                        Tue 19 <br />
+                        Oct
+                      </div>
 
-                      <a class="input-button" title="toggle" data-toggle>
+                      <a class="calendar-second-icon">
                         <img
-                          class="icon-calendar"
+                          id="calendar-second-icon"
                           src="./img/calendar.svg"
                           alt=""
                         />
                       </a>
-                      <div class="date__button-container">
-                        <button>Prev</button>
-                        <button>Next</button>
-                      </div>
                     </div>
                   </div>
                 </div>
+
+                <button class="form__book-btn" type="submit">
+                  Book Flights
+                </button>
               </div>
             </form>
             <!-- form -->

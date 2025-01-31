@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* roboto-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -46,6 +47,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -246,20 +248,21 @@ ul {
 }
 
 .form__backdrop {
-  height: 250px;
+  height: 270px;
   width: 100%;
   max-width: 1280px;
   background-color: #ffffff;
   border-radius: 12px;
   -webkit-box-shadow: 0 5px 13px 7px grey;
           box-shadow: 0 5px 13px 7px grey;
-  margin: -40px auto;
+  padding: 15px 30px;
+  margin: -80px auto;
+  position: relative;
 }
 .form__select-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 25px;
   margin-bottom: 25px;
 }
 .form__select-container .select {
@@ -281,15 +284,80 @@ ul {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  gap: 6px;
 }
 .form__from {
   border: 2px solid rgb(170, 170, 170);
   border-radius: 10px;
   padding: 16px 20px;
+  max-width: 345px;
+}
+.form__from-text {
+  color: rgba(21, 21, 21, 0.6);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.form__from-input {
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+.form__from-input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.form__from-input::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form__from-input::-moz-placeholder {
+  color: black;
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form__from-input:-moz-placeholder {
+  color: black;
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form__from-input:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form__from-input:focus::-webkit-input-placeholder {
+  color: black;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form__from-input:focus::-moz-placeholder {
+  color: black;
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form__from-input:focus:-moz-placeholder {
+  color: black;
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form__from-input:focus:-ms-input-placeholder {
+  color: black;
+  opacity: 0;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 .form__button-replace {
   margin: auto 0;
@@ -301,17 +369,136 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
+.form__button-replace-item-img {
+  max-width: 15px;
+}
 .form__date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   border: 2px solid rgb(170, 170, 170);
   border-radius: 12px;
-  padding: 16px 20px;
+  padding: 16px 70px;
+  margin-left: 30px;
+}
+.form__date-return {
+  text-align: center;
+}
+.form__book-btn {
+  width: 233px;
+  height: 80px;
+  border: none;
+  background-color: rgb(101, 98, 147);
+  text-align: center;
+  border-radius: 12px;
+  position: absolute;
+  bottom: -17%;
+  left: 40%;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-control {
+  border: none;
+  max-width: 100px;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  opacity: 0; /* Прячем оригинальный input */
+  pointer-events: none; /* Отключаем клики */
+  width: 100%;
+}
+.form-control:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.form-control::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-control::-moz-placeholder {
+  color: black;
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-control:-moz-placeholder {
+  color: black;
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-control:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-control:focus::-webkit-input-placeholder {
+  color: black;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-control:focus::-moz-placeholder {
+  color: black;
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-control:focus:-moz-placeholder {
+  color: black;
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.form-control:focus:-ms-input-placeholder {
+  color: black;
+  opacity: 0;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.calendar-icon,
+.calendar-second-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.flatpickr {
+  position: relative;
+  display: inline-block;
+}
+
+#date {
+  position: absolute;
+  opacity: 0; /* Прячем оригинальный input */
+  pointer-events: none; /* Отключаем клики */
+  width: 100%;
+}
+
+.formatted-date,
+.formatted-date-return {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  min-width: 80px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
 }
 
 .section-private {
