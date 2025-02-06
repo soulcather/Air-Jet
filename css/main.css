@@ -194,7 +194,7 @@ ul {
 
 .hero-section {
   padding-top: 90px;
-  background-image: url("../img/hero-section-bg.jpg");
+  background-image: url(/img/hero-section-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -301,6 +301,7 @@ ul {
   text-transform: uppercase;
 }
 .form__from-input {
+  width: 320px;
   border: none;
   font-size: 24px;
   font-weight: 600;
